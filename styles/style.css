@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;900&display=swap');
+
+:root {
+    --fontColor: hsl(224, 23%, 55%);
+    --packColor: hsl(225, 100%, 98%);
+    --btnColor: hsl(245, 75%, 52%);
+    --heading_color: hsl(223, 47%, 23%);
+    --hov_color: hsl(225, 100%, 94%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-image: url("/assets/pattern-background-desktop.svg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 380px;
+    height: 610px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px var(--fontColor);
+}
+
+.image>img {
+    border-radius: 15px 15px 0px 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    text-align: center;
+    padding: 20px 40px 10px 40px;
+}
+
+.content>h1 {
+    color: var(--heading_color);
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.content>p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--fontColor);
+}
+
+.pack-choice {
+    width: 85%;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--packColor);
+    border-radius: 10px;
+}
+
+.pack-choice>span>h1 {
+    color: var(--heading_color);
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.pack-choice>span>p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--fontColor);
+    margin-top: -7px;
+}
+
+.change {
+    margin-left: auto;
+    color: var(--btnColor);
+    font-size: 12px;
+    font-weight: 900;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.p-btn {
+    margin: 30px 5px 5px 5px;
+    width: 85%;
+    height: 2.7rem;
+    background-color: var(--btnColor);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0px 15px 7px var(--hov_color);
+    cursor: pointer;
+}
+
+.c-btn {
+    margin: 20px;
+    font-size: 12px;
+    font-weight: 900;
+    color: var(--fontColor);
+    cursor: pointer;
+}
+
+.change:hover {
+    color: var(--fontColor);
+    text-decoration: none;
+}
+
+.c-btn:hover {
+    color: var(--heading_color);
+}
+
+.p-btn:hover {
+    background-color: hsla(245, 75%, 52%, 0.699);
+}
+
+@media screen and (max-width:500px) {
+    main {
+        width: 300px;
+        height: 550px;
+    }
+
+    .content {
+        padding: 20px 30px 10px 30px;
+    }
+
+    .content>h1 {
+        font-size: 20px;
+    }
+
+    .content>p {
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 500;
+        color: var(--fontColor);
+    }
+
+    .pack-choice {
+        gap: 10px;
+    }
+
+    .pack-choice>span>h1 {
+        font-size: 13px;
+    }
+
+    .pack-choice>span>p {
+        font-size: 13px;
+        margin-top: -7px;
+    }
+
+    .icon,
+    .icon>img {
+        width: 40px;
+    }
+
+}
