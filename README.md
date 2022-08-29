@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/order-summary-card-CFLiXSOqWB)
 - Live Site URL: [Live site URL](https://deepak-tech40-order-summary.netlify.app/)
 
 ## My process
