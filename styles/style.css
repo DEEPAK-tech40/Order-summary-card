@@ -68,13 +68,13 @@ main {
     border-radius: 10px;
 }
 
-.pack-choice>span>h1 {
+.pack-choice>div>h1 {
     color: var(--heading_color);
     font-size: 14px;
     font-weight: 900;
 }
 
-.pack-choice>span>p {
+.pack-choice>div>p {
     font-size: 14px;
     font-weight: 500;
     color: var(--fontColor);
@@ -149,11 +149,11 @@ main {
         gap: 10px;
     }
 
-    .pack-choice>span>h1 {
+    .pack-choice>div>h1 {
         font-size: 13px;
     }
 
-    .pack-choice>span>p {
+    .pack-choice>div>p {
         font-size: 13px;
         margin-top: -7px;
     }
